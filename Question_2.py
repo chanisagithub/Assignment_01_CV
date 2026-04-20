@@ -12,8 +12,8 @@ x_white = np.array([0,   110,  175,  255])
 y_white = np.array([0,    20,  255,  255])
 
 # Breakpoints for gray-matter accentuation (emphasize mid-intensity range)
-x_gray = np.array([0,   80,  120,  160,  255])
-y_gray = np.array([0,   40,  130,  240,  255])
+x_gray = np.array([0,   55,  135,  200,  255])
+y_gray = np.array([0,    0,  255,   80,   80])
 
 lut_white = np.interp(np.arange(256), x_white, y_white).astype(np.uint8)
 lut_gray = np.interp(np.arange(256), x_gray, y_gray).astype(np.uint8)
